@@ -5,75 +5,115 @@
     <meta http-equiv="Content-Type" content="text/html" ; charset=UTRF-8">
     <link rel="stylesheet" type="text/css" href="Personal Webpage CSS/main.css">
     <link rel="icon" type="image/png" href="Images/Avi.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <script src="index.js"></script>
 
 <body class="otherBody">
-    <nav class="nav">
-        <div class="container">
-            <h1 class="logo" style="font-size: 35px;">Mysterion</h1>
-            <ul>
-                <a href="index.html">Home</a>
-                <a class="current">News</a>
-                <a href="Commission.html">Commission</a>
-                <a href="Autosplitter.html">Autosplitter</a>
-                <a href="SRT.html">SRT</a>
-                <a href="Speedruns.html">Speedruns</a>
-                <a href="Tutorials.html">Tutorials</a>
-                <a href="Links.html">Links</a>
-                <a href="Support.html">Support</a>
-            </ul>
+    <div id="container">
+        <nav class="nav">
+            <div class="container">
+                <h1 class="logo" style="font-size: 35px;">Mysterion</h1>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a class="current">News</a>
+                    <a href="Autosplitter.html">Autosplitter</a>
+                    <a href="SRT.html">SRT</a>
+                    <a href="Speedruns.html">Speedruns</a>
+                    <a href="Tutorials.html">Tutorials</a>
+                    <a href="Links.html">Links</a>
+                    <a href="Support.html">Support</a>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="body">
+            <div class="infobox" id="body" style="padding-bottom: 0px">
+                <h1>January 2022<label class="switch">
+                        <input type="checkbox" onclick="toggleTextJanuary()">
+                        <span class="slider round"></span>
+                    </label>
+                </h1>
+                <h3 style="font-size:larger" class="infobox">25.01.2022
+                    <p>I added a footer to my Webpage. It includes all the accessible pages from the navigation bar and Ive added an <br>
+                        Impressum.
+                    </p>
+                </h3>
+
+                <h3 style="font-size:larger" class="infobox">24.01.2022
+                    <p>After finishing almost all of my current commissions, I set myself the goal to rework my old
+                        autosplitters &lt February 2021 and those that really need some finetuning<br>
+                        So that would include the splitters:
+                        <li>Star wars jedi fallen order</li>
+                        <li>Devil May Cry 1</li>
+                        <li>Devil May Cry 2</li>
+                        Will only take a maximum of 1-2 commissions now, to prevent an overflow when reworking my old
+                        splitters.
+                    </p>
+                </h3>
+
+                <h3 style="font-size:larger" class="infobox">23.01.2022
+                    <p>Currently working on the game Gun (2005). I am creating a start, split and loadremover function.
+                        <br>
+
+                    </p>
+                </h3>
+
+                <h3 style="font-size:larger" class="infobox">22.01.2022
+                    <p>
+                        I started a new project named "Webpage". I am using it documentate all of my projects, speedruns
+                        and
+                        other kinds of stuff. <br>
+                        I am looking forward to improve this page and add all kind of features!
+                    </p>
+                </h3>
+                <h3 style="font-size:larger" class="infobox">13.01.2022
+                    <p>
+                        I have successfully finished the Final Fantasy VII: Remake autosplitter and also added a Boss
+                        splitter
+                        to it --> took me a little bit longer to finish it.
+                    </p>
+                </h3>
+            </div>
+            <div style="padding: 3px;"></div>
+            <div class="infobox">
+                <h1>December 2021<label class="switch">
+                        <input type="checkbox" onclick="toggleTextDecember()">
+                        <span class="slider round"></span>
+                    </label>
+                </h1>
+                <h2 style="font-size:larger" class="infobox">20.12.2021
+                    <p>
+                        I was commissioned to create an autosplitter for Final Fantasy VII: Remake by Scruffington.
+                    </p>
+                </h2>
+            </div>
         </div>
-    </nav>
-
-    <div class="infobox" id="body">
-        <h1>January 2022<label class="switch">
-                <input type="checkbox" onclick="toggleTextJanuary()">
-                <span class="slider round"></span>
-            </label>
-        </h1>
-        <h3 style="font-size:larger" class="infobox">24.01.2022
-            <p>After finishing almost all of my current commissions, I set myself the goal to rework my old autosplitters &lt February 2021 and those that really need some finetuning<br>
-                So that would include the splitters:
-                <li>Star wars jedi fallen order</li>
-                <li>Devil May Cry 1</li>
-                <li>Devil May Cry 2</li>
-                Will only take a maximum of 1-2 commissions now, to prevent an overflow when reworking my old splitters.
-            </p>
-        </h3>
-
-        <h3 style="font-size:larger" class="infobox">23.01.2022
-            <p>Currently working on the game Gun (2005). I am creating a start, split and loadremover function. <br>
-
-            </p>
-        </h3>
-
-        <h3 style="font-size:larger" class="infobox">22.01.2022
-            <p>
-                I started a new project named "Webpage". I am using it documentate all of my projects, speedruns and other kinds of stuff. <br>
-                I am looking forward to improve this page and add all kind of features!
-            </p>
-        </h3>
-        <h3 style="font-size:larger" class="infobox">13.01.2022
-            <p>
-                I have successfully finished the Final Fantasy VII: Remake autosplitter and also added a Boss splitter to it --> took me a little bit longer to finish it.
-            </p>
-        </h3>
+        <div id="footer">
+            <div class="footer-basic">
+                <footer>
+                    <div class="social">
+                        <a href="https://www.youtube.com/channel/UCSLq19vLeTJB_H6MUKBwycA"><i class="icon ion-social-youtube" style="color: red;"></i></a>
+                        <a href="https://www.twitch.tv/mysterion_06_"><i class="icon ion-social-Twitch" style="color: purple;"></i></a>
+                        <a href="https://twitter.com/Mysterion_06_"><i class="icon ion-social-twitter" style="color: lightskyblue;"></i></a>
+                        <ul class="list-inline">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="News.html">News</a></li>
+                            <li><a href="Autosplitter.html">Autosplitter</a></li>
+                            <li><a href="SRT.html">SRT</a></li>
+                            <li><a href="Speedruns.html">Speedruns</a></li>
+                            <li><a href="Tutorials.html">Tutorials</a></li>
+                            <li><a href="Links.html">Links</a></li>
+                            <li><a href="Support.html">Support</a></li>
+                            <li><a href="Impressum.html">Impressum</a></li>
+                        </ul>
+                        <p class="copyright">Mysterion06 © 2022</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
     </div>
-    <div style="padding: 3px;"></div>
-    <div class="infobox">
-        <h1>December 2021<label class="switch">
-                <input type="checkbox" onclick="toggleTextDecember()">
-                <span class="slider round"></span>
-            </label>
-        </h1>
-        <h2 style="font-size:larger" class="infobox">20.12.2021
-            <p> 
-                I was commissioned to create an autosplitter for Final Fantasy VII: Remake by Scruffington.
-            </p>
-        </h2>
-    </div> 
 </body>
 
 </html>
