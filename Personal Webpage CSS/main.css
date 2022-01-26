@@ -75,6 +75,12 @@ body {
 	color: #c0392b;
 	font-weight: bold;
 }
+
+ul li a.current{
+	color: #c0392b;
+	font-weight: bold;
+}
+
 /* ----- Dropdown end ----- */
 
 
