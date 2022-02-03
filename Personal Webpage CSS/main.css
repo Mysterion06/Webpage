@@ -16,6 +16,7 @@ body {
 .otherBody{
 	background-image:url(../Images/Header.png);
 	background-repeat: no-repeat;
+	background-attachment: fixed;
   	background-size: 195%;
   	background-position: 50%;
 }
@@ -26,6 +27,19 @@ body {
 	padding: 0 2rem;
 }
 
+/* Main Container for entire page */
+#container { 
+	min-height:100%;
+	position:relative;
+}
+
+/* Additional body for the main content */ 
+#body {
+	padding:10px;
+	padding-bottom:0px;   /* Height of the footer */
+}
+
+/* ----- Navigation bar begin ----- */
 .nav {
 	overflow: hidden;
 	background-color: #222;
@@ -81,7 +95,7 @@ ul li a.current{
 	font-weight: bold;
 }
 
-/* ----- Dropdown end ----- */
+/* ----- Navigation bar end ----- */
 
 
 /* ----- infobox begin ----- */
@@ -95,7 +109,6 @@ ul li a.current{
     line-height: 1.5em;
 }
 /* ----- infobox end ----- */
-
 
 /* The switch - the box around the slider */
 .switch {
@@ -182,7 +195,7 @@ input:checked + .slider:before {
 	margin: 30px 50px;
 }
 
-.body2{
+.links{
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -191,40 +204,8 @@ input:checked + .slider:before {
 	margin: 0;
 }
 /* ----- Finish for Links ----- */
-  
-.showcase {
-	position: absolute;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #111;
-	color: #fff;
-	transition: 0.5s;
-	z-index: 2;
-}
-
-.showcase video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 100vh;
-	object-fit: cover;
-	opacity: 0.3;
-}
 
 /* ----- Start of Footer ----- */
-#container {
-	min-height:100%;
-	position:relative;
-}
-
-#body {
-	padding:10px;
-	padding-bottom:0px;   /* Height of the footer */
-}
-
 #footer {
 	position: absolute;
 	width: 100%;
@@ -304,3 +285,147 @@ input:checked + .slider:before {
   margin-bottom:0;
 }
 /* ----- End of Footer ----- */
+
+/* ----- Autosplitter; Display of my collection of ASLs begin ----- */
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+.projects-section {
+	text-align: center;
+	padding: 10rem 2rem;
+	background: var(--main-blue);
+}
+  
+.projects-section-header {
+	max-width: 640px;
+	margin: 0 auto 6rem auto;
+	border-bottom: 0.2rem solid var(--main-white);
+}
+  
+@media (max-width: 28.75em) {
+	.projects-section-header {
+	  font-size: 4rem;
+	}
+}
+  
+  /* "Automatic" image grid using no media queries */
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4rem;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 6rem;
+}
+
+.project {
+	background: var(--main-gray);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+}
+  
+.code {
+	color: var(--main-gray);
+	transition: color 0.3s ease-out;
+}
+  
+.project:hover .code {
+	color: #ff7f50;
+}
+  
+.project-image {
+	height: calc(100% - 6.8rem);
+	width: 100%;
+	object-fit:cover;
+}
+  
+.project-title {
+	
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+  
+.btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 2px;
+}
+  
+.btn-show-all {
+	font-size: 2rem;
+	background: var(--main-gray);
+	transition: background 0.3s ease-out;
+}
+  
+.btn-show-all:hover {
+	background: var(--main-red);
+}
+  
+.btn-show-all:hover > i {
+	transform: translateX(2px);
+}
+  
+.btn-show-all > i {
+	margin-left: 10px;
+	transform: translateX(0);
+	transition: transform 0.3s ease-out;
+}
+
+.projects-grid h1,.projects-grid h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects-grid h1 {
+  font-size: 6rem;
+}
+
+.projects-grid h2 {
+  font-size: 4.2rem;
+}
+
+.projects-grid ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in;
+	color: black; 
+	text-align: left;
+}
+
+.splitter {
+	background-color: #303841;
+	position: relative;
+	overflow: hidden;
+}
+
+.splitter:hover .overview {
+	transform: translateY(0);
+}
+/* ----- Autosplitter; Display of my collection of ASLs end ----- */

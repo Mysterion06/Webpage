@@ -1,7 +1,7 @@
 //Will be improved once I learned a better method
 
 function toggleTextAll(){
-    for (let i = 2; i < 4; i++) {
+    for (let i = 2; i < 20; i++) {
         var elms = document.getElementsByTagName("h"+i);
         Array.from(elms).forEach((x) => {
             if (x.style.display === "none") {
@@ -39,3 +39,15 @@ function toggleTextJanuary(){
     })
 }
 
+//2022 February
+function toggleTextFebruary(){
+    var elms = document.getElementsByTagName("h4");
+  
+    Array.from(elms).forEach((x) => {
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    })
+}
