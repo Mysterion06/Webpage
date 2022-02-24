@@ -348,60 +348,34 @@ html {
 	font-size: 2rem;
 	padding: 0.5rem;
 }
-  
-.btn {
-	display: inline-block;
-	padding: 1rem 2rem;
-	border-radius: 2px;
-}
-  
-.btn-show-all {
-	font-size: 2rem;
-	background: var(--main-gray);
-	transition: background 0.3s ease-out;
-}
-  
-.btn-show-all:hover {
-	background: var(--main-red);
-}
-  
-.btn-show-all:hover > i {
-	transform: translateX(2px);
-}
-  
-.btn-show-all > i {
-	margin-left: 10px;
-	transform: translateX(0);
-	transition: transform 0.3s ease-out;
-}
 
 .projects-grid h1,.projects-grid h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
+  	font-family: 'Raleway', sans-serif;
+  	font-weight: 700;
+  	text-align: center;
 }
 
 .projects-grid h1 {
-  font-size: 6rem;
+  	font-size: 6rem;
 }
 
 .projects-grid h2 {
-  font-size: 4.2rem;
+  	font-size: 4.2rem;
 }
 
 .projects-grid ul {
-  list-style: none;
+  	list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: var(--main-white);
+  	text-decoration: none;
+  	color: var(--main-white);
 }
 
 img {
-  display:block;
-  width: 100%;
-  height: 100%;
+  	display:block;
+  	width: 100%;
+  	height: 100%;
 }
 
 .overview {
