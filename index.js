@@ -14,7 +14,7 @@ function toggleTextAll(){
 }
 
 //2021 December
-function toggleTextDecember(){
+function toggleTextDecember2021(){
     var elms = document.getElementsByTagName("h2");
   
     Array.from(elms).forEach((x) => {
@@ -27,7 +27,7 @@ function toggleTextDecember(){
 }
 
 //2022 January
-function toggleTextJanuary(){
+function toggleTextJanuary2022(){
     var elms = document.getElementsByTagName("h3");
   
     Array.from(elms).forEach((x) => {
@@ -40,7 +40,7 @@ function toggleTextJanuary(){
 }
 
 //2022 February
-function toggleTextFebruary(){
+function toggleTextFebruary2022(){
     var elms = document.getElementsByTagName("h4");
   
     Array.from(elms).forEach((x) => {
@@ -50,4 +50,17 @@ function toggleTextFebruary(){
         x.style.display = "none";
       }
     })
+}
+
+//2024 July
+function toggleTextJuly2024(){
+  var elms = document.getElementsByTagName("h4");
+
+  Array.from(elms).forEach((x) => {
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  })
 }
