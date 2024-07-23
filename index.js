@@ -54,7 +54,7 @@ function toggleTextFebruary2022(){
 
 //2024 July
 function toggleTextJuly2024(){
-  var elms = document.getElementsByTagName("h4");
+  var elms = document.getElementsByTagName("h5");
 
   Array.from(elms).forEach((x) => {
     if (x.style.display === "none") {
