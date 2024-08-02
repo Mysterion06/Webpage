@@ -1,4 +1,4 @@
-# My personal Webpage
+# My Webpage
 
 ## Page access
   * https://mysterion06.github.io/Webpage/index.html
@@ -9,7 +9,7 @@
   * Commission
   * Autosplitter
   * SRT
-  * Speedruns
+  * SRT Plugin Manager
   * Tutorials
   * Links
   * Support
@@ -18,5 +18,5 @@
   * [Mysterion06](https://github.com/Mysterion06) (Founder)
 
 For further questions hit me up on discord:
-  * Khalid hameidei'yah Al-sham'ah#5426
+  * Mysterion352
 
