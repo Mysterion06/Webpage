@@ -65,6 +65,38 @@ function toggleTextAugust2024(){
 }
 
 
+function loadHeader() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'header.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                document.getElementById('header').innerHTML = xhr.responseText;
+            } else {
+                console.error('Error loading header:', xhr.status);
+                document.getElementById('header').innerHTML = '<p>Error loading header. Please try again later.</p>';
+            }
+        }
+    };
+    xhr.send();
+}
+
+function loadFooter() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'footer.html', true);
+  xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+              document.getElementById('footer').innerHTML = xhr.responseText;
+          } else {
+              console.error('Error loading Footer:', xhr.status);
+              document.getElementById('footer').innerHTML = '<p>Error loading Footer. Please try again later.</p>';
+          }
+      }
+  };
+  xhr.send();
+}
+
 function includeHTML() {
   const elements = document.querySelectorAll('[data-include]');
   elements.forEach(el => {
