@@ -2,7 +2,7 @@
 /*https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap*/
 /*https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap*/
 body {
-	background-color: #111;
+	background: linear-gradient(to right,  #333, #111);
 	color: #ffffff;
 	font-size: 16px;
 	font-family: "Teko", monospace;
@@ -12,14 +12,61 @@ body {
 	margin: 0;
 	position: relative;
 }
+#content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.content-box {
+    background-color: #333;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    text-align: center;
+}
+.styled-link {
+    color: #E07A5F;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.styled-link:hover {
+    background-color: rgba(224, 122, 95, 0.1);
+}
+
+.discord-contact {
+    color: #81B29A;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
 
 .otherBody{
-	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
   	background-size: 195%;
   	background-position: 50%;
-    
 }
 
 .container {
@@ -55,7 +102,7 @@ body {
 /* Main Navigation Bar Styles */
 .nav {
     overflow: hidden;
-    background-color: #222;
+    background: linear-gradient(to right,  #444, #222);
     width: 100%;
 }
 
@@ -290,10 +337,6 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-.comissionTable{
-	margin-left: auto;
-	margin-right: auto;
-}
 /* ----- End of Slider ----- */
 
 /* ----- Autosplitter; Display of my collection of ASLs begin ----- */
@@ -455,7 +498,7 @@ img {
 
 .footer-basic {
   	padding:40px 0;
-  	background-color:#222;
+  	background: linear-gradient(to right,  #444, #222);
   	color:#4b4c4d;
 }
 
@@ -641,8 +684,13 @@ img {
     border-bottom: 1px solid #ccc;
 }
 
+.tablinks{
+    color: white;
+}
+
+
 .tab button {
-    background-color: #f1f1f1;
+    background-color: #222;
     border: none;
     outline: none;
     cursor: pointer;
@@ -652,11 +700,11 @@ img {
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #898989;
 }
 
 .tab button.active {
-    background-color: #ccc;
+    background-color: #898989;
 }
 
 .tabcontent {
@@ -664,7 +712,7 @@ img {
     padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
-    background-color: white;
+    background-color: #333;
 }
 
 .tabcontent h3 {
@@ -686,7 +734,7 @@ th, td {
 }
 
 th {
-    background-color: #f4f4f4;
+    background-color: #333;
     
 }
 
@@ -703,6 +751,7 @@ th {
 
 /* ----- Commission table ----- */
 
+/* ----- Donation ----- */
 .donation-section {
     text-align: center;
     background-color: #333;
@@ -758,3 +807,77 @@ th {
 .kofi:hover {
     background-color: #249bc7;
 }
+
+/* ----- Donation ----- */
+
+/* ----- FAQ ----- */
+.faq-container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.faq-card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faq-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.faq-question {
+    background-color: #444;
+    cursor: pointer;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    background-color: #2a2a2a;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.faq-card.open .faq-answer {
+    max-height: 200px;
+}
+
+.faq-card.open .faq-question {
+    background-color: #555;
+}
+
+/* ----- FAQ ----- */

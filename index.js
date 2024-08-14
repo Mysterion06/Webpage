@@ -118,3 +118,17 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".tablinks.active").click();
 });
 // ----- Commission table
+
+
+function toggleAnswer(element) {
+    const card = element.parentElement;
+    const openCards = document.querySelectorAll('.faq-card.open');
+
+    openCards.forEach(openCard => {
+        if (openCard !== card) {
+            openCard.classList.remove('open');
+        }
+    });
+
+    card.classList.toggle('open');
+}
